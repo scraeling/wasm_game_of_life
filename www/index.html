@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game of life</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #101010;
+        color: #AAAAAA;
+        font-family: sans-serif;
+        size: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gol-canvas"></canvas>
+    <script src="./bootstrap.js"></script>
+    <div id="controls">
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="reset">Reset</button>
+    <label>
+      <span>Frametime</span>
+    <input type=range min=1 max=100 value=60 id="frametime">
+    </label>
+    <label>
+      <span>Infinite</span>
+      <input type="checkbox" id="infinite">
+    </label>
+    </div>
+
+  </body>
+</html>
